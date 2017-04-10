@@ -1,0 +1,56 @@
+CREATE TABLE `aihuishou_mobile` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(500) NOT NULL,
+  `price` decimal(10,2) DEFAULT NULL,
+  `color` varchar(100) DEFAULT NULL,
+  `add_time` datetime DEFAULT NULL,
+  `href` varchar(500) DEFAULT NULL,
+  `is_fetch` tinyint(1) DEFAULT '0' COMMENT '是否抓取过详情',
+  `brand` varchar(30) DEFAULT NULL,
+  `model` varchar(50) DEFAULT NULL,
+  `purchase_channel` varchar(30) DEFAULT NULL COMMENT '购买渠道',
+  `new_old` varchar(30) DEFAULT NULL COMMENT '成色',
+  `ROM` varchar(30) DEFAULT NULL,
+  `goods_name` varchar(100) DEFAULT NULL,
+  `warranty_expired` tinyint(1) DEFAULT '1' COMMENT '保修过期',
+  `update_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=309 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `jd_2_mobile` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(500) NOT NULL,
+  `price` decimal(10,2) DEFAULT NULL,
+  `is_jd` tinyint(1) DEFAULT NULL,
+  `color` varchar(100) DEFAULT NULL,
+  `add_time` datetime DEFAULT NULL,
+  `shop_name` varchar(200) DEFAULT NULL,
+  `shop_id` varchar(20) DEFAULT NULL,
+  `sku` varchar(20) DEFAULT NULL,
+  `href` varchar(500) DEFAULT NULL,
+  `is_fetch` tinyint(1) DEFAULT '0' COMMENT '是否抓取过详情',
+  `brand` varchar(30) DEFAULT NULL,
+  `model` varchar(50) DEFAULT NULL,
+  `purchase_channel` varchar(30) DEFAULT NULL COMMENT '购买渠道',
+  `new_old` varchar(30) DEFAULT NULL COMMENT '成色',
+  `ROM` varchar(30) DEFAULT NULL,
+  `goods_name` varchar(100) DEFAULT NULL,
+  `warranty_expired` tinyint(1) DEFAULT '1' COMMENT '保修过期',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2581 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `jd_mobile` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(500) NOT NULL,
+  `price` decimal(10,2) DEFAULT NULL,
+  `is_jd` tinyint(1) DEFAULT NULL,
+  `color` varchar(100) DEFAULT NULL,
+  `add_time` datetime DEFAULT NULL,
+  `shop_name` varchar(200) DEFAULT NULL,
+  `shop_id` varchar(20) DEFAULT NULL,
+  `sku` varchar(20) DEFAULT NULL,
+  `href` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31068 DEFAULT CHARSET=utf8;
